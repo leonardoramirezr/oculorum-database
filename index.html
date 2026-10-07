@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Expedientes clínicos optométricos: datos del paciente, historia clínica, lensometría y refracción." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0b6e79" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Oculorum · Expedientes clínicos</title>
+    <script>
+      // Aplica el tema elegido antes de pintar, para evitar un destello de color.
+      try {
+        const tema = localStorage.getItem('oculorum:tema')
+        if (tema === 'claro') document.documentElement.dataset.theme = 'light'
+        else if (tema === 'oscuro') document.documentElement.dataset.theme = 'dark'
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
